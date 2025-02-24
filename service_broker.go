@@ -16,14 +16,14 @@
 package brokerapi
 
 import (
-	"github.com/pivotal-cf/brokerapi/v12/domain"
-	"github.com/pivotal-cf/brokerapi/v12/domain/apiresponses"
+	"code.cloudfoundry.org/brokerapi/v13/domain"
+	"code.cloudfoundry.org/brokerapi/v13/domain/apiresponses"
 )
 
 //go:generate go run github.com/maxbrunsfeld/counterfeiter/v6 -generate
 //counterfeiter:generate -o fakes/auto_fake_service_broker.go -fake-name AutoFakeServiceBroker . ServiceBroker
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 // Each method of the ServiceBroker interface maps to an individual endpoint of the Open Service Broker API.
 //
 // The specification is available here: https://github.com/openservicebrokerapi/servicebroker/blob/v2.14/spec.md
@@ -33,81 +33,81 @@ type ServiceBroker interface {
 	domain.ServiceBroker
 }
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type DetailsWithRawParameters interface {
 	domain.DetailsWithRawParameters
 }
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type DetailsWithRawContext interface {
 	domain.DetailsWithRawContext
 }
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type ProvisionDetails = domain.ProvisionDetails
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type ProvisionedServiceSpec = domain.ProvisionedServiceSpec
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type GetInstanceDetailsSpec = domain.GetInstanceDetailsSpec
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type UnbindSpec = domain.UnbindSpec
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type BindDetails = domain.BindDetails
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type BindResource = domain.BindResource
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type UnbindDetails = domain.UnbindDetails
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type UpdateServiceSpec = domain.UpdateServiceSpec
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type DeprovisionServiceSpec = domain.DeprovisionServiceSpec
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type DeprovisionDetails = domain.DeprovisionDetails
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type UpdateDetails = domain.UpdateDetails
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type PreviousValues = domain.PreviousValues
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type PollDetails = domain.PollDetails
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type LastOperation = domain.LastOperation
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type LastOperationState = domain.LastOperationState
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 const (
 	InProgress LastOperationState = "in progress"
 	Succeeded  LastOperationState = "succeeded"
 	Failed     LastOperationState = "failed"
 )
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type Binding = domain.Binding
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type GetBindingSpec = domain.GetBindingSpec
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type VolumeMount = domain.VolumeMount
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type SharedDevice = domain.SharedDevice
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain/apiresponses
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain/apiresponses
 var (
 	ErrInstanceAlreadyExists = apiresponses.ErrInstanceAlreadyExists
 

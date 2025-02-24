@@ -19,12 +19,12 @@ import (
 	"log/slog"
 	"net/http"
 
-	"github.com/pivotal-cf/brokerapi/v12/internal/middleware"
+	"code.cloudfoundry.org/brokerapi/v13/internal/middleware"
 
-	"github.com/pivotal-cf/brokerapi/v12/auth"
-	"github.com/pivotal-cf/brokerapi/v12/domain"
-	"github.com/pivotal-cf/brokerapi/v12/handlers"
-	"github.com/pivotal-cf/brokerapi/v12/middlewares"
+	"code.cloudfoundry.org/brokerapi/v13/auth"
+	"code.cloudfoundry.org/brokerapi/v13/domain"
+	"code.cloudfoundry.org/brokerapi/v13/handlers"
+	"code.cloudfoundry.org/brokerapi/v13/middlewares"
 )
 
 type BrokerCredentials struct {

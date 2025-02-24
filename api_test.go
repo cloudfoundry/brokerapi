@@ -28,12 +28,12 @@ import (
 	"net/url"
 	"strings"
 
+	"code.cloudfoundry.org/brokerapi/v13"
+	"code.cloudfoundry.org/brokerapi/v13/fakes"
+	"code.cloudfoundry.org/brokerapi/v13/middlewares"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/gbytes"
-	"github.com/pivotal-cf/brokerapi/v12"
-	"github.com/pivotal-cf/brokerapi/v12/fakes"
-	"github.com/pivotal-cf/brokerapi/v12/middlewares"
 )
 
 var _ = Describe("Service Broker API", func() {

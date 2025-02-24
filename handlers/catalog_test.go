@@ -6,14 +6,14 @@ import (
 	"log/slog"
 	"net/http"
 
+	"code.cloudfoundry.org/brokerapi/v13/domain"
+	"code.cloudfoundry.org/brokerapi/v13/domain/apiresponses"
+	brokerFakes "code.cloudfoundry.org/brokerapi/v13/fakes"
+	"code.cloudfoundry.org/brokerapi/v13/handlers"
+	"code.cloudfoundry.org/brokerapi/v13/handlers/fakes"
+	"code.cloudfoundry.org/brokerapi/v13/middlewares"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
-	"github.com/pivotal-cf/brokerapi/v12/domain"
-	"github.com/pivotal-cf/brokerapi/v12/domain/apiresponses"
-	brokerFakes "github.com/pivotal-cf/brokerapi/v12/fakes"
-	"github.com/pivotal-cf/brokerapi/v12/handlers"
-	"github.com/pivotal-cf/brokerapi/v12/handlers/fakes"
-	"github.com/pivotal-cf/brokerapi/v12/middlewares"
 )
 
 var _ = Describe("Services", func() {

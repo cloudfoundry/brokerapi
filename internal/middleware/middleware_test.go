@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"net/http/httptest"
 
+	"code.cloudfoundry.org/brokerapi/v13/internal/middleware"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
-	"github.com/pivotal-cf/brokerapi/v12/internal/middleware"
 )
 
 var _ = Describe("Use()", func() {

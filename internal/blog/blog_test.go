@@ -5,11 +5,11 @@ import (
 	"encoding/json"
 	"log/slog"
 
+	"code.cloudfoundry.org/brokerapi/v13/internal/blog"
+	"code.cloudfoundry.org/brokerapi/v13/middlewares"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/gbytes"
-	"github.com/pivotal-cf/brokerapi/v12/internal/blog"
-	"github.com/pivotal-cf/brokerapi/v12/middlewares"
 )
 
 var _ = Describe("Context data", func() {

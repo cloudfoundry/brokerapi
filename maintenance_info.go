@@ -1,8 +1,8 @@
 package brokerapi
 
 import (
-	"github.com/pivotal-cf/brokerapi/v12/domain"
+	"code.cloudfoundry.org/brokerapi/v13/domain"
 )
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type MaintenanceInfo = domain.MaintenanceInfo

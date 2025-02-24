@@ -18,9 +18,9 @@ package brokerapi_test
 import (
 	"encoding/json"
 
+	"code.cloudfoundry.org/brokerapi/v13"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
-	"github.com/pivotal-cf/brokerapi/v12"
 )
 
 var _ = Describe("Catalog Response", func() {

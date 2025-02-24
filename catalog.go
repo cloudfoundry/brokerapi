@@ -18,60 +18,60 @@ package brokerapi
 import (
 	"reflect"
 
-	"github.com/pivotal-cf/brokerapi/v12/domain"
+	"code.cloudfoundry.org/brokerapi/v13/domain"
 )
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type Service = domain.Service
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type ServiceDashboardClient = domain.ServiceDashboardClient
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type ServicePlan = domain.ServicePlan
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type ServiceSchemas = domain.ServiceSchemas
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type ServiceInstanceSchema = domain.ServiceInstanceSchema
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type ServiceBindingSchema = domain.ServiceBindingSchema
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type Schema = domain.Schema
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type ServicePlanMetadata = domain.ServicePlanMetadata
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type ServicePlanCost = domain.ServicePlanCost
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type ServiceMetadata = domain.ServiceMetadata
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 func FreeValue(v bool) *bool {
 	return domain.FreeValue(v)
 }
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 func BindableValue(v bool) *bool {
 	return domain.BindableValue(v)
 }
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type RequiredPermission = domain.RequiredPermission
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 const (
 	PermissionRouteForwarding = domain.PermissionRouteForwarding
 	PermissionSyslogDrain     = domain.PermissionSyslogDrain
 	PermissionVolumeMount     = domain.PermissionVolumeMount
 )
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 func GetJsonNames(s reflect.Value) (res []string) {
 	return domain.GetJsonNames(s)
 }

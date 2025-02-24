@@ -1,4 +1,4 @@
-module github.com/pivotal-cf/brokerapi/v12
+module code.cloudfoundry.org/brokerapi/v13
 
 go 1.23
 

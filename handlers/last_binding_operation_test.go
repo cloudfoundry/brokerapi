@@ -10,13 +10,13 @@ import (
 	"net/http"
 	"net/http/httptest"
 
+	"code.cloudfoundry.org/brokerapi/v13"
+	"code.cloudfoundry.org/brokerapi/v13/domain"
+	"code.cloudfoundry.org/brokerapi/v13/domain/apiresponses"
+	brokerFakes "code.cloudfoundry.org/brokerapi/v13/fakes"
+	"code.cloudfoundry.org/brokerapi/v13/middlewares"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
-	"github.com/pivotal-cf/brokerapi/v12"
-	"github.com/pivotal-cf/brokerapi/v12/domain"
-	"github.com/pivotal-cf/brokerapi/v12/domain/apiresponses"
-	brokerFakes "github.com/pivotal-cf/brokerapi/v12/fakes"
-	"github.com/pivotal-cf/brokerapi/v12/middlewares"
 )
 
 var _ = Describe("LastBindingOperation", func() {

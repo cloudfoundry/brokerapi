@@ -7,16 +7,16 @@
 package brokerapi
 
 import (
-	"github.com/pivotal-cf/brokerapi/v12/domain/apiresponses"
+	"code.cloudfoundry.org/brokerapi/v13/domain/apiresponses"
 )
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain/apiresponses
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain/apiresponses
 // FailureResponse can be returned from any of the `ServiceBroker` interface methods
 // which allow an error to be returned. Doing so will provide greater control over
 // the HTTP response.
 type FailureResponse = apiresponses.FailureResponse
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain/apiresponses
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain/apiresponses
 // NewFailureResponse returns an error of type FailureResponse.
 // err will by default be used as both a logging message and HTTP response description.
 // statusCode is the HTTP status code to be returned, must be 4xx or 5xx
@@ -25,11 +25,11 @@ func NewFailureResponse(err error, statusCode int, loggerAction string) error {
 	return apiresponses.NewFailureResponse(err, statusCode, loggerAction)
 }
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain/apiresponses
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain/apiresponses
 // FailureResponseBuilder provides a fluent set of methods to build a *FailureResponse.
 type FailureResponseBuilder = apiresponses.FailureResponseBuilder
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain/apiresponses
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain/apiresponses
 // NewFailureResponseBuilder returns a pointer to a newly instantiated FailureResponseBuilder
 // Accepts required arguments to create a FailureResponse.
 func NewFailureResponseBuilder(err error, statusCode int, loggerAction string) *FailureResponseBuilder {

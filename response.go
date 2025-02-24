@@ -16,51 +16,51 @@
 package brokerapi
 
 import (
-	"github.com/pivotal-cf/brokerapi/v12/domain"
-	"github.com/pivotal-cf/brokerapi/v12/domain/apiresponses"
+	"code.cloudfoundry.org/brokerapi/v13/domain"
+	"code.cloudfoundry.org/brokerapi/v13/domain/apiresponses"
 )
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain/apiresponses
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain/apiresponses
 type EmptyResponse = apiresponses.EmptyResponse
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain/apiresponses
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain/apiresponses
 type ErrorResponse = apiresponses.ErrorResponse
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain/apiresponses
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain/apiresponses
 type CatalogResponse = apiresponses.CatalogResponse
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain/apiresponses
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain/apiresponses
 type ProvisioningResponse = apiresponses.ProvisioningResponse
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain/apiresponses
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain/apiresponses
 type GetInstanceResponse = apiresponses.GetInstanceResponse
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain/apiresponses
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain/apiresponses
 type UpdateResponse = apiresponses.UpdateResponse
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain/apiresponses
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain/apiresponses
 type DeprovisionResponse = apiresponses.DeprovisionResponse
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain/apiresponses
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain/apiresponses
 type LastOperationResponse = apiresponses.LastOperationResponse
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain/apiresponses
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain/apiresponses
 type AsyncBindResponse = apiresponses.AsyncBindResponse
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain/apiresponses
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain/apiresponses
 type BindingResponse = apiresponses.BindingResponse
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain/apiresponses
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain/apiresponses
 type GetBindingResponse = apiresponses.GetBindingResponse
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain/apiresponses
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain/apiresponses
 type UnbindResponse = apiresponses.UnbindResponse
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain/apiresponses
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain/apiresponses
 type ExperimentalVolumeMountBindingResponse = apiresponses.ExperimentalVolumeMountBindingResponse
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type ExperimentalVolumeMount = domain.ExperimentalVolumeMount
 
-// Deprecated: Use github.com/pivotal-cf/brokerapi/domain
+// Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
 type ExperimentalVolumeMountPrivate = domain.ExperimentalVolumeMountPrivate
