@@ -1,10 +1,12 @@
 # brokerapi
 
-[![test](https://github.com/pivotal-cf/brokerapi/workflows/run-tests/badge.svg?branch=main)](https://github.com/pivotal-cf/brokerapi/actions/workflows/run-tests.yml?query=branch%3Amain)
+[![test](https://github.com/cloudfoundry/brokerapi/actions/workflows/run-tests.yml/badge.svg?branch=main)](https://github.com/cloudfoundry/brokerapi/actions/workflows/run-tests.yml?query=branch%3Amain)
+
+https://github.com/cloudfoundry/brokerapi/actions/workflows/run-tests/badge.svg?query=branch%3Amain
 
 A Go package for building [V2 Open Service Broker API](https://github.com/openservicebrokerapi/servicebroker/) compliant Service Brokers.
 
-## [Docs](https://godoc.org/github.com/pivotal-cf/brokerapi/v11)
+## [Docs](https://godoc.org/code.cloudfoundry.org/brokerapi/v13)
 
 ## Dependencies
 
@@ -18,17 +20,10 @@ We appreciate and welcome open source contribution. We will try to review the ch
 ## Usage
 
 `brokerapi` defines a
-[`ServiceBroker`](https://godoc.org/github.com/pivotal-cf/brokerapi/v11#ServiceBroker)
+[`ServiceBroker`](https://godoc.org/code.cloudfoundry.org/brokerapi/v13/domain#ServiceBroker/domain#ServiceBroker)
 interface. Pass an implementation of this to
-[`brokerapi.New`](https://godoc.org/github.com/pivotal-cf/brokerapi/v11#New)
-or [`brokerapi.NewWithOptions`](https://pkg.go.dev/github.com/pivotal-cf/brokerapi/v11#NewWithOptions),
+[`brokerapi.New`](https://godoc.org/code.cloudfoundry.org/brokerapi/v13#New),
 which returns an `http.Handler` that you can use to serve handle HTTP requests.
-
-Alternatively, if you already have a `*chi.Mux` that you want to attach
-service broker routes to, you can use
-[`brokerapi.AttachRoutes`](https://godoc.org/github.com/pivotal-cf/brokerapi/v11#AttachRoutes).
-Note in this case, the Basic Authentication and Originating Identity middleware
-will not be set up, so you will have to attach them manually if required.
 
 ## Error types
 
@@ -93,5 +88,5 @@ service broker uses the BrokerAPI package to create a service broker for Redis.
 
 ## Releasing
 
-Releasing steps can be found [here](https://github.com/pivotal-cf/brokerapi/wiki/Releasing-new-BrokerAPI-major-version)
+Releasing steps can be found [here](https://github.com/cloudfoundry/brokerapi/wiki/Releasing-new-BrokerAPI-major-version)
 
