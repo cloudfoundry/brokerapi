@@ -113,6 +113,8 @@ var (
 
 	ErrInstanceDoesNotExist = apiresponses.ErrInstanceDoesNotExist
 
+	ErrInstanceNotFound = apiresponses.ErrInstanceNotFound
+
 	ErrInstanceLimitMet = apiresponses.ErrInstanceLimitMet
 
 	ErrBindingAlreadyExists = apiresponses.ErrBindingAlreadyExists

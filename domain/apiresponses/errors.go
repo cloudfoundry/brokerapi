@@ -8,6 +8,7 @@ import (
 const (
 	instanceExistsMsg             = "instance already exists"
 	instanceDoesntExistMsg        = "instance does not exist"
+	instanceNotFoundMsg           = "instance cannot be fetched"
 	serviceLimitReachedMsg        = "instance limit for this service has been reached"
 	servicePlanQuotaExceededMsg   = "The quota for this service plan has been exceeded. Please contact your Operator for help."
 	serviceQuotaExceededMsg       = "The quota for this service has been exceeded. Please contact your Operator for help."
@@ -26,6 +27,7 @@ const (
 	instanceAlreadyExistsErrorKey = "instance-already-exists"
 	bindingAlreadyExistsErrorKey  = "binding-already-exists"
 	instanceMissingErrorKey       = "instance-missing"
+	instanceNotFoundErrorKey      = "instance-not-found"
 	bindingMissingErrorKey        = "binding-missing"
 	bindingNotFoundErrorKey       = "binding-not-found"
 	asyncRequiredKey              = "async-required"
@@ -43,6 +45,10 @@ var (
 
 	ErrInstanceDoesNotExist = NewFailureResponseBuilder(
 		errors.New(instanceDoesntExistMsg), http.StatusGone, instanceMissingErrorKey,
+	).WithEmptyResponse().Build()
+
+	ErrInstanceNotFound = NewFailureResponseBuilder(
+		errors.New(instanceDoesntExistMsg), http.StatusNotFound, instanceNotFoundErrorKey,
 	).WithEmptyResponse().Build()
 
 	ErrInstanceLimitMet = NewFailureResponse(
