@@ -2,8 +2,6 @@
 
 [![test](https://github.com/cloudfoundry/brokerapi/actions/workflows/run-tests.yml/badge.svg?branch=main)](https://github.com/cloudfoundry/brokerapi/actions/workflows/run-tests.yml?query=branch%3Amain)
 
-https://github.com/cloudfoundry/brokerapi/actions/workflows/run-tests/badge.svg?query=branch%3Amain
-
 A Go package for building [V2 Open Service Broker API](https://github.com/openservicebrokerapi/servicebroker/) compliant Service Brokers.
 
 ## [Docs](https://godoc.org/code.cloudfoundry.org/brokerapi/v13)
