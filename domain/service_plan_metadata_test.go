@@ -64,7 +64,7 @@ var _ = Describe("ServicePlanMetadata", func() {
 			var wg sync.WaitGroup
 			wg.Add(2)
 
-			for i := 0; i < 2; i++ {
+			for range 2 {
 				go func() {
 					defer wg.Done()
 					defer GinkgoRecover()

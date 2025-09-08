@@ -199,7 +199,7 @@ type Binding struct {
 	BackupAgentURL  string          `json:"backup_agent_url,omitempty"`
 	VolumeMounts    []VolumeMount   `json:"volume_mounts"`
 	Endpoints       []Endpoint      `json:"endpoints,omitempty"`
-	Metadata        BindingMetadata `json:"metadata,omitempty"`
+	Metadata        BindingMetadata `json:"metadata"`
 }
 
 type BindingMetadata struct {

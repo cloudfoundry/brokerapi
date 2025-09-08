@@ -3,6 +3,7 @@ package domain
 import (
 	"encoding/json"
 	"fmt"
+	"maps"
 	"reflect"
 )
 
@@ -31,9 +32,7 @@ func (sm ServiceMetadata) MarshalJSON() ([]byte, error) {
 	}
 	delete(m, additionalMetadataName)
 
-	for k, v := range sm.AdditionalMetadata {
-		m[k] = v
-	}
+	maps.Copy(m, sm.AdditionalMetadata)
 	return json.Marshal(m)
 }
 

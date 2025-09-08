@@ -4,6 +4,7 @@ import (
 	"context"
 	"errors"
 	"reflect"
+	"slices"
 
 	"code.cloudfoundry.org/brokerapi/v13"
 	"code.cloudfoundry.org/brokerapi/v13/domain"
@@ -478,10 +479,5 @@ type FakeCredentials struct {
 }
 
 func sliceContains(needle string, haystack []string) bool {
-	for _, element := range haystack {
-		if element == needle {
-			return true
-		}
-	}
-	return false
+	return slices.Contains(haystack, needle)
 }
