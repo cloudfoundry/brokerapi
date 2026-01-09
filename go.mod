@@ -8,7 +8,7 @@ require (
 	github.com/google/uuid v1.6.0
 	github.com/maxbrunsfeld/counterfeiter/v6 v6.12.1
 	github.com/onsi/ginkgo/v2 v2.27.3
-	github.com/onsi/gomega v1.38.3
+	github.com/onsi/gomega v1.39.0
 	honnef.co/go/tools v0.6.1
 )
 
