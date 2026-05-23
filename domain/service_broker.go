@@ -68,17 +68,21 @@ const (
 )
 
 type VolumeMount struct {
-	Driver       string       `json:"driver"`
-	ContainerDir string       `json:"container_dir"`
-	Mode         string       `json:"mode"`
-	DeviceType   string       `json:"device_type"`
-	Device       SharedDevice `json:"device"`
+	Driver       string `json:"driver"`
+	ContainerDir string `json:"container_dir"`
+	Mode         string `json:"mode"`
+	DeviceType   string `json:"device_type"`
+	Device       Device `json:"device,omitempty"`
 }
 
-type SharedDevice struct {
-	VolumeId    string         `json:"volume_id"`
-	MountConfig map[string]any `json:"mount_config"`
+type Device struct {
+	VolumeId     string         `json:"volume_id"`
+	MountConfig  map[string]any `json:"mount_config"`
+	DeviceConfig map[string]any `json:"device_config,omitempty"`
 }
+
+// Deprecated: Use Device
+type SharedDevice = Device
 
 type ProvisionDetails struct {
 	ServiceID        string           `json:"service_id"`
