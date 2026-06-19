@@ -23,7 +23,7 @@ jobs:
     - uses: actions/setup-go@v6
       with:
         go-version: ${{ matrix.version }}
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@v7
     - run: GOTOOLCHAIN=local make test
   call-dependabot-pr-workflow:
     needs: test
