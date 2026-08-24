@@ -1,13 +1,13 @@
 module code.cloudfoundry.org/brokerapi/v13
 
-go 1.25.0
+go 1.26.0
 
 require (
 	github.com/google/uuid v1.6.0
 	github.com/maxbrunsfeld/counterfeiter/v6 v6.12.2
 	github.com/onsi/ginkgo/v2 v2.32.1
 	github.com/onsi/gomega v1.42.1
-	honnef.co/go/tools v0.7.0
+	honnef.co/go/tools v0.8.0
 )
 
 require (
