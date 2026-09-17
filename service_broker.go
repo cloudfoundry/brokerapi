@@ -105,7 +105,7 @@ type GetBindingSpec = domain.GetBindingSpec
 type VolumeMount = domain.VolumeMount
 
 // Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain
-type SharedDevice = domain.SharedDevice
+type SharedDevice = domain.Device
 
 // Deprecated: Use code.cloudfoundry.org/brokerapi/v13/domain/apiresponses
 var (
